@@ -1,0 +1,103 @@
+<form data-request="onRegister" data-request-validate data-request-flash>
+<div class="container">
+  <div class="row mx-0 justify-content-center">
+    <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0">
+      <form
+        method="POST"
+        class="w-100 rounded p-4 border bg-white"
+        action="https://herotofu.com/start"
+        enctype="multipart/form-data"
+      >
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">Your name</span>
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Complainer"
+          />
+        </label>
+
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">Email address</span>
+          <input
+            name="email"
+            type="email"
+            class="form-control"
+            placeholder="Complainer@example.com"
+          />
+        </label>
+
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">Contact</span>
+          <input
+            name="contact"
+            type="contact"
+            class="form-control"
+            placeholder="+9196735363"
+          />
+        </label>
+
+
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">State</span>
+          <select name="state_name" type="state" id="state_name" class="form-control">
+          <option value="">Select State</option>
+          {% for dist in district %}
+            <option value="{{ dist.id }}">{{ dist.state_name }}</option>
+          {% endfor %}
+          </select>
+
+        </label>
+
+
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">Select City</span>
+          <select name="city" type="city" id="city" class="form-control">
+            <option value="">City</option>
+          </select>
+        </label>
+
+        <input type="radio" id="suggestion" name="complaint_type" value="suggestion">
+        <label for="html">Suggestion</label><br>
+        <input type="radio" id="complaint" name="complaint_type" value="complaint">
+        <label for="html">Complaint</label><br>
+
+        <div class="mb-4">
+          <label class="d-block mb-2">Receipt</label>
+          <div class="form-control h-auto">
+            <input name="receipt" type="file" class="form-control-file" />
+          </div>
+        </div>
+
+        <label class="d-block mb-4">
+          <span class="d-block mb-2">What's wrong?</span>
+          <textarea
+            name="message"
+            class="form-control"
+            rows="3"
+            placeholder="Please describe your problem"
+          ></textarea>
+        </label>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary px-3">Submit</button>
+        </div>
+
+        <div class="d-block text-right">
+          <div class="small">
+            by
+            <a
+              href="https://herotofu.com/start"
+              class="text-dark"
+              target="_blank"
+              >Netgen</a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</form>

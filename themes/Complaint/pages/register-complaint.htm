@@ -1,0 +1,15 @@
+title = "Register Complaint"
+url = "/register-complaint"
+layout = "default"
+is_hidden = 0
+
+[RegisterComplaint]
+==
+<?php
+use DB;
+function onStart(){
+ $this['district'] = DB::table('netgen_netgen_states')->get();
+}
+?>
+==
+{% component 'RegisterComplaint' %}

@@ -1,0 +1,42 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    email:
+        label: Email
+        span: auto
+        type: text
+    contact:
+        label: Contact
+        span: auto
+        type: text
+    state_name:
+        label: 'State Name'
+        span: auto
+        type: text
+    city:
+        label: City
+        span: auto
+        type: text
+    complaint_type:
+        label: 'Complaint Type'
+        span: auto
+        type: text
+    receipt:
+        label: Document
+        span: auto
+        type: text
+    message:
+        label: Message
+        span: auto
+        type: text
+    status:
+        label: Status
+        options:
+            pending: Pending
+            Resolved: Resolved
+            Rejected: Rejected
+        showSearch: true
+        span: auto
+        type: dropdown

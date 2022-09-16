@@ -1,0 +1,10 @@
+name: RegisterComplaints
+form: $/netgen/netgen/models/complaint/fields.yaml
+modelClass: Netgen\Netgen\Models\Complaint
+defaultRedirect: netgen/netgen/registercomplaints
+create:
+    redirect: 'netgen/netgen/registercomplaints/update/:id'
+    redirectClose: netgen/netgen/registercomplaints
+update:
+    redirect: netgen/netgen/registercomplaints
+    redirectClose: netgen/netgen/registercomplaints

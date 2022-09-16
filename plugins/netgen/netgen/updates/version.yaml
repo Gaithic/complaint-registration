@@ -1,0 +1,35 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table netgen_netgen_district'
+    - builder_table_create_netgen_netgen_district.php
+1.0.3:
+    - 'Updated table netgen_netgen_district'
+    - builder_table_update_netgen_netgen_district.php
+1.0.4:
+    - 'Updated table netgen_netgen_district'
+    - builder_table_update_netgen_netgen_cities.php
+1.0.5:
+    - 'Created table netgen_netgen_states'
+    - builder_table_create_netgen_netgen_states.php
+1.0.6:
+    - 'Created table netgen_netgen_complaint'
+    - builder_table_create_netgen_netgen_complaint.php
+1.0.7:
+    - 'Updated table netgen_netgen_complaint'
+    - builder_table_update_netgen_netgen_complaint.php
+1.0.8:
+    - 'Updated table netgen_netgen_complaint'
+    - builder_table_update_netgen_netgen_complaint_2.php
+1.0.9:
+    - 'Updated table netgen_netgen_complaint'
+    - builder_table_update_netgen_netgen_complaint_3.php
+1.0.10:
+    - 'Updated table netgen_netgen_complaint'
+    - builder_table_update_netgen_netgen_complaint_4.php
+1.0.11:
+    - 'Updated table netgen_netgen_complaint'
+    - builder_table_update_netgen_netgen_complaint_5.php
+1.0.12:
+    - 'Updated table netgen_netgen_complaint'
+    - builder_table_update_netgen_netgen_complaint_6.php

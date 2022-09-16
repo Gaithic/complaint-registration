@@ -1,0 +1,17 @@
+columns:
+    complaint_type:
+        label: 'Complaint Type'
+        type: text
+        searchable: true
+    created_at:
+        label: 'Registration Date'
+        type: date
+        searchable: true
+    status:
+        label: Status
+        type: number
+        searchable: true
+    name:
+        label: Name
+        type: text
+        searchable: true

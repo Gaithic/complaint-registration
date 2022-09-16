@@ -1,0 +1,11 @@
+plugin:
+    name: 'netgen.netgen::lang.plugin.name'
+    description: 'netgen.netgen::lang.plugin.description'
+    author: Netgen
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Complaint
+        url: netgen/netgen/registercomplaints
+        icon: icon-comment

@@ -1,0 +1,4 @@
+title: RegisterComplaints
+modelClass: Netgen\Netgen\Models\Complaint
+toolbar:
+    buttons: reorder_toolbar
