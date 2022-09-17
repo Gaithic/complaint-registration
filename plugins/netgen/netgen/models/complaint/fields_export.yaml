@@ -1,0 +1,14 @@
+fields:
+  created_at_from:
+      label: 'Date From'
+      type: datepicker
+      mode: date
+      span: left
+      placeholder: 'Enter Date From'
+  created_at_to:
+      label: 'Date To'
+      type: datepicker
+      mode: date
+      span: right
+      placeholder: 'Enter Date To'
+

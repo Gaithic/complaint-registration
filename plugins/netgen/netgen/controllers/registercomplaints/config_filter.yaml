@@ -1,0 +1,23 @@
+scopes:
+
+  Status:
+    label: Staus
+    type: group
+    conditions: status in (:filtered)
+    options: 
+        Pending: Pending
+        Resolved: Resolved
+        Rejected: Rejected
+
+  Complaint Type:
+    label: Complaint Type
+    type: group
+    conditions: complaint_type in (:filtered)
+    options: 
+        suggestion: Suggestion
+        complaint: Complaint
+
+  Registration Date:
+        label: Registration Date
+        type: date
+        conditions: created_at >= ':filtered'

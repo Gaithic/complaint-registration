@@ -1,0 +1,7 @@
+export:
+    title: Export Complaints
+    modelClass: Netgen\Netgen\Models\ComplaintExport
+    list: $/netgen/netgen/models/complaint/columns.yaml
+    redirect: netgen/netgen/registercomplaints
+    form: $/netgen/netgen/models/complaint/fields_export.yaml
+    fileName: complaints.csv

@@ -1,7 +1,6 @@
 <?php namespace Netgen\Netgen\Models;
 
 use Model;
-use Netgen\Netgen\Models\States;
 
 /**
  * Model
@@ -26,7 +25,13 @@ class Complaint extends Model
     public $rules = [
     ];
 
-    // public $hasMany = [
-    //     'state_name' => \Netgen\Netgen\Models\States::class
-    // ];
+    public $belongsTo = [
+        'state_name' => 'Netgen\Netgen\Models\Complaint',
+        'table' => 'netgen_netgen_complaint_state_name',
+    ];
+
+    public $attachOne = [
+        'file' => 'System\Models\File'
+    ];
+  
 }

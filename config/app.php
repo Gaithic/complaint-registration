@@ -234,7 +234,7 @@ return [
         // 'Illuminate\Html\HtmlServiceProvider', // Example
 
         'System\ServiceProvider',
-        'Mews\Captcha\CaptchaServiceProvider',
+        Mews\Captcha\CaptchaServiceProvider::class,
     ]),
 
     /*
@@ -271,7 +271,7 @@ return [
     'aliases' => array_merge(include(base_path('modules/system/aliases.php')), [
 
         // 'Str' => 'Illuminate\Support\Str', // Example
-        'Captcha' => 'Mews\Captcha\Facades\Captcha',
+        'Captcha' => Mews\Captcha\Facades\Captcha::class,
 
     ]),
 

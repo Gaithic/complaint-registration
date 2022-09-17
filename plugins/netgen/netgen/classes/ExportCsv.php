@@ -4,11 +4,13 @@ use Illuminate\Http\Request;
 
 class ExportCsv{
 
-    public function exportCsv(Request $request)
+    public function exportCsv()
 {
+   
    $fileName = 'complaint.csv';
    $tasks = Complaint::all();
-
+//    $tasks = Complaint::where('status', $status)->orWhere('created_at', $status)->orWhere('complaint_type', $status);
+    
         $headers = array(
             "Content-type"        => "text/csv",
             "Content-Disposition" => "attachment; filename=$fileName",
@@ -27,7 +29,7 @@ class ExportCsv{
                 $row['Name']  = $task->name;
                 $row['Email']    = $task->Email;
                 $row['Contact']    = $task->contact;
-                $row['State Name']    = $task->state_name->state_name;
+                $row['State Name']    = $task->state_name;
                 $row['City']    = $task->city;
                 $row['Complaint Type']    = $task->complaint_type;
                 $row['Message']    = $task->message;
@@ -43,3 +45,5 @@ class ExportCsv{
         return response()->stream($callback, 200, $headers);
     }
 }
+
+

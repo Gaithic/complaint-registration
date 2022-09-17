@@ -1,0 +1,74 @@
+<style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+ </style>
+<table style="width:100%; border: 1px solid black;
+border-collapse: collapse;">
+
+  <tr>
+    <th>Sr No.</th>
+    <th>District</th>
+    <th>Name of Block</th>
+    <th>Name of ICRP</th>
+    <th>Father/Husband Name</th>
+    <th>Contact</th>
+    <th>Cedre Type</th>
+    
+  </tr>
+
+
+    
+  {% for $dt in $data %})
+  <tr>
+    <td>{{ $dt->id }}</td>
+    <td>{{ $dt->district->district_name }}</td>
+    <td>{{ $dt->block_name}}</td>
+    <td>{{ $dt->name }}</td>
+    <td>{{ $dt->father_or_husband_name }}</td>
+    <td>{{ $dt->contact }}</td>
+    <td>{{ $dt->form_type }}</td>
+  </tr>
+  <style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+ </style>
+<table style="width:100%; border: 1px solid black;
+border-collapse: collapse;">
+
+  <tr>
+    <th>Sr No.</th>
+    <th>District</th>
+    <th>Name of Block</th>
+    <th>Name of ICRP</th>
+    <th>Father/Husband Name</th>
+    <th>Contact</th>
+    <th>Cedre Type</th>
+    
+  </tr>
+
+
+    
+  {% for dt in data %} 
+  <tr>
+    <td>{{ $dt->id }}</td>
+    <td>{{ $dt->district->district_name }}</td>
+    <td>{{ $dt->block_name}}</td>
+    <td>{{ $dt->name }}</td>
+    <td>{{ $dt->father_or_husband_name }}</td>
+    <td>{{ $dt->contact }}</td>
+    <td>{{ $dt->form_type }}</td>
+  </tr>
+{% endfor %}
+

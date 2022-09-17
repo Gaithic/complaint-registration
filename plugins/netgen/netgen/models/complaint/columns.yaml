@@ -9,9 +9,9 @@ columns:
         searchable: true
     status:
         label: Status
-        type: number
+        type: text
         searchable: true
     name:
         label: Name
         type: text
-        searchable: true
+        searchable: false

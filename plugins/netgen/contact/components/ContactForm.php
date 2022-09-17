@@ -49,19 +49,20 @@ class ContactForm extends ComponentBase
             $contact->content = Input::get('content');
             $contact->save();
 
-            $vars = [
-                'name' => Input::get('name'), 
-                'email' => Input::get('email'),
-                'subject' => Input::get('subject'),
-                'content' => Input::get('content'),                
-            ];
-            Mail::send('netgen.contact::mail.message', $vars, function($message) {
+            // $vars = [
+            //     'name' => Input::get('name'), 
+            //     'email' => Input::get('email'),
+            //     'subject' => Input::get('subject'),
+            //     'content' => Input::get('content'),                
+            // ];
+            // Mail::send('netgen.contact::mail.message', $vars, function($message) {
 
-                $contactEmail = GlobalSetting::select('contact_email')->first();
-                $message->to($contactEmail->contact_email, 'Admin Person');
-                $message->subject('New message from contact form Advocate General');
-                Flash::success('Contact form has been submitted!');
-            });
+            //     $contactEmail = GlobalSetting::select('contact_email')->first();
+            //     $message->to($contactEmail->contact_email, 'Admin Person');
+            //     $message->subject('New message from contact form Advocate General');
+            //     Flash::success('Contact form has been submitted!');
+            // });
+            Flash::success('Contact form has been submitted!');
         }
         
     }

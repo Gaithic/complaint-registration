@@ -11,20 +11,12 @@ fields:
         label: Contact
         span: auto
         type: text
-    state_name:
-        label: 'State Name'
-        span: auto
-        type: text
     city:
         label: City
         span: auto
         type: text
     complaint_type:
         label: 'Complaint Type'
-        span: auto
-        type: text
-    receipt:
-        label: Document
         span: auto
         type: text
     message:
@@ -40,3 +32,18 @@ fields:
         showSearch: true
         span: auto
         type: dropdown
+    file:
+        label: 'File upload'
+        span: auto
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
+    state_name:
+        label: 'State Name'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation

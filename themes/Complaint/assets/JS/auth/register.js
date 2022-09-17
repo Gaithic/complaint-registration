@@ -8,7 +8,6 @@ $.ajaxSetup({
         $('#state_name').on('change', function(e){
           var state_id =  e.target.value;
           console.log(state_id);
-          var cities;
           $.ajax({
             url:'/get-cities',
             type:'get',

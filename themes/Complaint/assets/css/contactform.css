@@ -131,14 +131,13 @@
   .contact1 {
     margin-left: 50%;
     width: 100%;
-    margin-top: 10%;
     min-height: 60%;
     padding: 15px;
-    background: #009bff;
+    /* background: #009bff;
     background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
     background: -o-linear-gradient(left, #0072ff, #00c6ff);
     background: -moz-linear-gradient(left, #0072ff, #00c6ff);
-    background: linear-gradient(left, #0072ff, #00c6ff);
+    background: linear-gradient(left, #0072ff, #00c6ff); */
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -150,7 +149,6 @@
   }
 
   .container-contact1 {
-    margin: 10%;
     width: 1163px;
     background: #fff;
     border-radius: 10px;
